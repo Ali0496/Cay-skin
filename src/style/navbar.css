@@ -37,4 +37,184 @@
   font-size: 16px;
   text-transform: uppercase;
   color: #fff;
+  cursor: pointer;
+}
+.logo {
+  cursor: pointer;
+}
+/* .menu,
+.card {
+  display: none;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+} */
+.menu {
+  gap: 8px;
+  display: none;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu__modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 50%;
+  background-color: rgba(0, 0, 0, 0.934);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 40px;
+  padding-top: 150px;
+  transform: translateX(-2500px);
+  transition: 300ms;
+}
+
+.show__modal {
+  transform: translateX(0px);
+  transition: 300ms;
+}
+.menu__modal li {
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+.menu__modal li:hover {
+  transform: scale(1.1);
+  transition: 300ms;
+}
+
+.menu__modal li:active {
+  transform: scale(0.9);
+  transition: 100ms;
+}
+
+.menu__modal span {
+  color: #fff;
+  font-size: 40px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.card__modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.934);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 40px;
+  padding-top: 150px;
+  transform: translateX(2500px);
+  transition: 300ms;
+}
+
+.show__card__modal {
+  transform: translateX(0px);
+  transition: 300ms;
+}
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+}
+
+.card__modal li {
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+.card__modal li:hover {
+  transform: scale(1.1);
+  transition: 300ms;
+}
+
+.card__modal li:active {
+  transform: scale(0.9);
+  transition: 100ms;
+}
+
+.card__modal span {
+  color: #fff;
+  font-size: 40px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.card {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .navbar h4 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    text-align: center;
+    color: #fff;
+  }
+  .navbar ul li {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .menu {
+    display: block;
+    display: flex;
+    align-items: center;
+  }
+  .card {
+    display: block;
+  }
+  .navbar nav ul {
+    display: none;
+  }
+  .logo {
+    max-width: 200px;
+  }
+}
+@media (max-width: 500px) {
+  .logo {
+    max-width: 170px;
+  }
+  .menu,
+  .card {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+  }
 }
