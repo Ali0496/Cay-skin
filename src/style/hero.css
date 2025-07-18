@@ -1,0 +1,45 @@
+.hero {
+  background-image: url("../image/bg_image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 656px 297px 80px;
+}
+
+.hero__wrapper h5 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.hero__wrapper h2 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 90%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 48px;
+}
+
+.hero__wrapper button {
+  border-radius: 28px;
+  width: 191px;
+  height: 55px;
+  background: #7373d7;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 160%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  display: block;
+  border: none;
+}

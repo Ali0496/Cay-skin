@@ -1,5 +1,7 @@
 .navbar {
-  background-color: salmon;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 .navbar h4 {

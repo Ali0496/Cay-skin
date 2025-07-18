@@ -1,11 +1,15 @@
+import Hero from "../component/Hero";
 import NavBar from "../component/NavBar";
 
 function HomePage() {
   return (
     <div className="home">
-      <div className="container">
+      <header>
         <NavBar />
-      </div>
+      </header>
+      <main>
+        <Hero />
+      </main>
     </div>
   );
 }

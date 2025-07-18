@@ -23,40 +23,41 @@ function NavBar() {
   };
   return (
     <div className="navbar">
-      <h4>Free Shipping for all orders over $100</h4>
-      <hr />
-
-      <nav>
-        <li onClick={openModal} className="menu">
-          Menu
-        </li>
-        <div className="menu__modal" ref={modalRef}>
-          <li>Home</li>
-          <li>Collection</li>
-          <li>About</li>
-          <span onClick={closeModal}>x</span>
-        </div>
-        <ul className="main__lists">
-          <li>Home</li>
-          <li>Collection</li>
-          <li>About</li>
-        </ul>
-        <img className="logo" src={logo} alt="" />
-        <ul className="secondsry__lists">
-          <li>Account</li>
-          <li>Search</li>
-          <li>Card(0)</li>
-        </ul>
-        <div ref={cardModalRef} className="card__modal">
-          <li>Account</li>
-          <li>Search</li>
-          <li>Card(0)</li>
-          <span onClick={removeCardMOdal}>x</span>
-        </div>
-        <li className="card" onClick={openCardModal}>
-          Card(0)
-        </li>
-      </nav>
+      <div className="container">
+        <h4>Free Shipping for all orders over $100</h4>
+        <hr />
+        <nav>
+          <li onClick={openModal} className="menu">
+            Menu
+          </li>
+          <div className="menu__modal" ref={modalRef}>
+            <li>Home</li>
+            <li>Collection</li>
+            <li>About</li>
+            <span onClick={closeModal}>x</span>
+          </div>
+          <ul className="main__lists">
+            <li>Home</li>
+            <li>Collection</li>
+            <li>About</li>
+          </ul>
+          <img className="logo" src={logo} alt="" />
+          <ul className="secondsry__lists">
+            <li>Account</li>
+            <li>Search</li>
+            <li>Card(0)</li>
+          </ul>
+          <div ref={cardModalRef} className="card__modal">
+            <li>Account</li>
+            <li>Search</li>
+            <li>Card(0)</li>
+            <span onClick={removeCardMOdal}>x</span>
+          </div>
+          <li className="card" onClick={openCardModal}>
+            Card(0)
+          </li>
+        </nav>{" "}
+      </div>
     </div>
   );
 }
