@@ -3,7 +3,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 656px 297px 80px;
+  padding: 656px 20px 80px;
 }
 
 .hero__wrapper h5 {
@@ -42,4 +42,39 @@
   margin: 0 auto;
   display: block;
   border: none;
+  cursor: pointer;
+}
+.hero__wrapper button:hover {
+  transform: scale(1.05);
+  transition: 300ms;
+}
+
+.hero__wrapper button:active {
+  transform: scale(0.99);
+  transition: 100ms;
+}
+@media (max-width: 760px) {
+  .hero {
+    padding: 540px 20px 40px;
+  }
+  .hero__wrapper h2 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+  }
+}
+@media (max-width: 460px) {
+  .hero__wrapper h2 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+  }
 }

@@ -1,0 +1,119 @@
+.products {
+  margin-top: 99px;
+}
+.products__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 29px;
+  max-width: 1440px;
+}
+.products__top h3 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #222;
+}
+
+.shop__all__btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.shop__all__btn h5 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 160%;
+  text-transform: uppercase;
+  color: #222;
+  border-bottom: 2px solid #7373d7;
+}
+.shopImgs {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  width: 100%;
+}
+.product__card {
+  max-width: 411px;
+}
+
+/* .product__card__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+} */
+.product__wrapper {
+  padding: 16px;
+}
+.new {
+  display: block;
+  margin: 0 0 21px auto;
+}
+
+.product1 {
+  margin-bottom: 76px;
+  width: 100%;
+}
+
+.product__wrapper h4 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: #fff;
+  margin-top: 8px;
+}
+
+.product__card p {
+  margin-top: 8px 0 4px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: #222;
+}
+.product__card h6 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: #222;
+}
+
+@media (max-width: 1200px) {
+  .mySwiper {
+    gap: 10px !important;
+  }
+}
+@media (max-width: 900px) {
+  .products__top {
+    flex-direction: column;
+    align-items: start;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 900px) {
+  .products__top h3 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #222;
+  }
+  .products__top h5 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 160%;
+    text-transform: uppercase;
+    color: #222;
+  }
+}

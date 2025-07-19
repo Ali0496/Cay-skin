@@ -1,5 +1,6 @@
 import Hero from "../component/Hero";
 import NavBar from "../component/NavBar";
+import Products from "../component/Products";
 
 function HomePage() {
   return (
@@ -9,6 +10,7 @@ function HomePage() {
       </header>
       <main>
         <Hero />
+        <Products />
       </main>
     </div>
   );
