@@ -1,0 +1,75 @@
+.brand {
+  margin-top: 80px;
+}
+
+.brand h4 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #222;
+  margin-bottom: 16px;
+}
+.brand h2 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 140%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #7373d7;
+}
+
+.brand h3 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 140%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #222;
+  margin-bottom: 56px;
+}
+
+.barnd__card__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brandCard {
+  padding: 37px 24px 32px;
+}
+.brandCard img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 22px;
+}
+
+.brandCard h4 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.brand p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  text-align: center;
+  color: #222;
+}
+
+@media (max-width: 600px) {
+  .brand h2,
+  .brand h3 {
+    font-size: 24px;
+  }
+}
