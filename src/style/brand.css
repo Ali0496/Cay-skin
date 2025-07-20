@@ -1,5 +1,5 @@
 .brand {
-  margin-top: 80px;
+  margin: 80px 0 94px;
 }
 
 .brand h4 {
@@ -66,10 +66,19 @@
   text-align: center;
   color: #222;
 }
-
-@media (max-width: 600px) {
+@media (max-width: 1100px) {
+  .barnd__card__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 680px) {
   .brand h2,
   .brand h3 {
     font-size: 24px;
+  }
+  .barnd__card__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }

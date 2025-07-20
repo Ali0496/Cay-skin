@@ -1,7 +1,12 @@
+import Banner from "../component/Banner";
 import Brand from "../component/Brand";
+import CollectionSection from "../component/CollectionSection";
+import Futured from "../component/Futured";
 import Hero from "../component/Hero";
 import NavBar from "../component/NavBar";
+import Nemo from "../component/Nemo";
 import Products from "../component/Products";
+import Sed from "../component/Sed";
 
 function HomePage() {
   return (
@@ -13,6 +18,11 @@ function HomePage() {
         <Hero />
         <Products />
         <Brand />
+        <CollectionSection />
+        <Banner />
+        <Sed />
+        <Nemo />
+        <Futured />
       </main>
     </div>
   );

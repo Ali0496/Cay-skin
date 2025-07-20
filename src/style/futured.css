@@ -1,0 +1,27 @@
+.futured {
+  background: #7373d7;
+  padding: 80px 0 40px;
+}
+
+.futured h4 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+.logo__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.logo__wrapper img {
+  width: 100%;
+}
+@media (max-width: 900px) {
+  .logo__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

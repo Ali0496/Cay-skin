@@ -1,0 +1,121 @@
+.banner__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "text image";
+}
+
+.banner__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  grid-area: text;
+}
+
+.banner__wrapper h2 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 140%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #222;
+  margin-bottom: 24px;
+}
+.banner__wrapper p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: #222;
+  margin-bottom: 40px;
+  max-width: 560px;
+}
+.banner__wrapper img {
+  width: 100%;
+}
+.banner__img {
+  grid-area: image;
+}
+
+.section1 button {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 160%;
+  text-transform: uppercase;
+  color: #7373d7;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #7373d7;
+  cursor: pointer;
+}
+.section2 button {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 160%;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #7373d7;
+  color: #222;
+  cursor: pointer;
+}
+.section2 {
+  grid-template-areas: "image text";
+}
+
+.section2 h5 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #7373d7;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 750px) {
+  .banner {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .banner__wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "image"
+      "text";
+  }
+
+  .banner__content h2 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 900px) {
+  .banner__content h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 750px) {
+  .banner__wrapper {
+    grid-template-columns: 1fr;
+  }
+  .section1 {
+    order: 1;
+  }
+  .section2 {
+    order: 2;
+  }
+  .banner__img {
+    order: 1;
+    margin-bottom: 24px;
+  }
+  .banner__content {
+    order: 2;
+    margin-bottom: 20px;
+  }
+}
