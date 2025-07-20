@@ -1,6 +1,7 @@
 import Banner from "../component/Banner";
 import Brand from "../component/Brand";
 import CollectionSection from "../component/CollectionSection";
+import Footer from "../component/Footer";
 import Futured from "../component/Futured";
 import Hero from "../component/Hero";
 import NavBar from "../component/NavBar";
@@ -24,6 +25,9 @@ function HomePage() {
         <Nemo />
         <Futured />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
