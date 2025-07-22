@@ -1,0 +1,60 @@
+.collection__hero {
+  background-image: url("../image/collection_bg.png");
+  padding: 233px 1001px 294px 100px;
+}
+.collection__hero button {
+  display: none;
+}
+.collection__hero h2 {
+  font-size: 18px;
+  order: 1;
+  width: 619px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  line-height: 160%;
+  color: #fff;
+  text-align: start;
+}
+.collection__hero h5 {
+  order: 2;
+  font-size: 52px;
+  width: 550px;
+  text-align: start;
+}
+.collection__hero .hero__wrapper {
+  display: flex;
+  flex-direction: column-reverse !important;
+  align-items: start;
+}
+
+@media (max-width: 1380px) {
+  .collection__hero .hero__wrapper {
+    position: absolute;
+    left: 20px;
+    top: 330px;
+  }
+  .collection__hero .hero__wrapper h2 {
+    width: 400px;
+  }
+}
+
+@media (max-width: 654px) {
+  .collection__hero .hero__wrapper h2 {
+    width: 430px;
+    font-size: 17px;
+  }
+  .collection__hero .hero__wrapper h5 {
+    width: 350px;
+    font-size: 45px;
+  }
+}
+@media (max-width: 444px) {
+  .collection__hero .hero__wrapper h2 {
+    width: 300px;
+    font-size: 15px;
+  }
+  .collection__hero .hero__wrapper h5 {
+    width: 330px;
+    font-size: 40px;
+  }
+}

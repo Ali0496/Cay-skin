@@ -2,6 +2,13 @@
   --font-family: "Rubik", sans-serif;
   --second-family: "Rubik", sans-serif;
   --third-family: "Rubik", sans-serif;
+
+  --toggle-bg-color: #f6f6f6;
+  --toggle-foreground: #003cff;
+  --toggle-primary-text: #0a0a0a;
+  --toggle-secondary: #ffffff;
+  --toggle-bg: #f0eb9d;
+  --toggle-fg: #ffd000;
 }
 
 * {

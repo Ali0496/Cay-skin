@@ -2,8 +2,17 @@
   position: absolute;
   left: 0;
   right: 0;
+  z-index: 999;
+}
+.navbar__white {
+  color: #fff;
 }
 
+.navbar__white h4,
+.navbar__white hr,
+.navbar__white ul li a {
+  color: #fff;
+}
 .navbar h4 {
   padding: 10px 0;
   font-family: var(--font-family);
@@ -12,6 +21,31 @@
   line-height: 160%;
   text-align: center;
   color: #fff;
+}
+
+.navbar__black {
+  color: black;
+  margin-bottom: 100px !important;
+}
+.navbar__black .menu {
+  color: black;
+}
+.navbar__black .card {
+  color: black;
+}
+
+.navbar__black .container ul li a {
+  color: black;
+  border-color: black;
+}
+
+.navbar__black h4 {
+  color: black;
+  border-color: black;
+}
+.navbar__black .container hr {
+  color: black;
+  border-color: black;
 }
 
 .navbar hr {
@@ -33,7 +67,7 @@
   gap: 24px;
 }
 
-.navbar ul li {
+.navbar ul li a {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 16px;
@@ -86,7 +120,7 @@
   transform: translateX(0px);
   transition: 300ms;
 }
-.menu__modal li {
+.menu__modal li a {
   color: #fff;
   font-size: 30px;
   cursor: pointer;
@@ -96,7 +130,7 @@
   transition: 300ms;
 }
 
-.menu__modal li:active {
+.menu__modal li a:active {
   transform: scale(0.95);
   transition: 100ms;
 }
@@ -141,17 +175,17 @@
   z-index: 998;
 }
 
-.card__modal li {
+.card__modal li a {
   color: #fff;
   font-size: 30px;
   cursor: pointer;
 }
-.card__modal li:hover {
+.card__modal li a:hover {
   transform: scale(1.1);
   transition: 300ms;
 }
 
-.card__modal li:active {
+.card__modal li a:active {
   transform: scale(0.9);
   transition: 100ms;
 }
@@ -176,20 +210,38 @@
 }
 
 @media (max-width: 900px) {
+  .navbar__black {
+    color: black;
+    margin-bottom: 100px !important;
+  }
+
+  .navbar__black .container ul li a {
+    color: black;
+    border-color: black;
+  }
+
+  .navbar__black h4 {
+    color: black;
+    border-color: black;
+  }
+  .navbar__black .container hr {
+    color: black !important;
+    border-color: black;
+  }
   .navbar h4 {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
     line-height: 160%;
     text-align: center;
-    color: #fff;
+    /* color: #fff; */
   }
-  .navbar ul li {
+  .navbar ul li a {
     font-family: var(--font-family);
     font-weight: 300;
     font-size: 14px;
     text-transform: uppercase;
-    color: #fff;
+    /* color: #fff; */
   }
   .menu {
     display: block;

@@ -1,21 +1,21 @@
-import "../style/products.css";
+import "../style/like-top.css";
 import arrowRight from "../image/Arrow Right.svg";
 import arrowLeft from "../image/Arrow Left.svg";
-import ProductCard from "./ProductCard";
 import newTop from "../image/NEW.svg";
 import product1 from "../image/product1.png";
 import product2 from "../image/productImg2.png";
 import saleTop from "../image/product2.svg";
 import product3 from "../image/image 9 (1).png";
+import ProductCard from "./ProductCard";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-
-function Products() {
+function LikeTop() {
   return (
-    <section className="products">
+    <section className="likeTop">
       <div className="container">
         <div className="products__top">
-          <h3>Discover our products</h3>
+          <h3>You might also like</h3>
           <div className="shop__all__btn">
             <div className="shopImgs">
               <span>Shop all</span>
@@ -41,7 +41,7 @@ function Products() {
               spaceBetween: 25,
             },
             954: {
-              slidesPerView: 3,
+              slidesPerView: 3.3,
               spaceBetween: 30,
             },
           }}
@@ -85,4 +85,4 @@ function Products() {
   );
 }
 
-export default Products;
+export default LikeTop;
