@@ -1,7 +1,12 @@
 import React from "react";
+import MyCard from "../component/MyCard";
 
 function CardPage() {
-  return <div>Card Page</div>;
+  return (
+    <div>
+      <MyCard />
+    </div>
+  );
 }
 
 export default CardPage;
